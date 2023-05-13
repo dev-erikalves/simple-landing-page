@@ -1,0 +1,47 @@
+@import "../variables/variables.scss";
+
+
+@mixin font-style($font-size, $font-family, $font-weight, $text-tranform) {
+    font-size: $font-size;
+    font-family: $font-family;
+    font-weight: $font-weight;
+    text-transform: $text-tranform;
+}
+
+@mixin common-measures($margin, $padding, $border-radius) {
+    margin: $margin;
+    padding: $padding;
+    border-radius: $border-radius;
+}
+
+header .navbar {
+    padding: 25px 2% 10px 2%;
+}
+
+header nav .navbar-brand {
+    margin-left: .7em;
+    @include font-style(1.3em, $font-secundary, 600, uppercase);
+}
+
+header nav ul li .nav-link {
+    color: #232323;
+    transition: 500ms;
+    @include common-measures(5px, 4px 10px, 7px);
+    @include font-style(1.1em, $font-primary, 400, none);
+
+    &.signupBtn {
+        background-color: $btnNavColor;
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+
+    &.loginBtn {
+        background-color: $btnNavColor;
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+}
