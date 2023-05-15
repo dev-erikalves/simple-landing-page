@@ -10,7 +10,7 @@ header {
 header nav .name-company {
   margin-left: 0.7em;
   font-size: 1.5rem;
-  font-family: Roboto;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   color: rgba(39, 39, 39, 0.768627451);
@@ -22,7 +22,7 @@ header nav ul li .nav-link {
   padding: 4px 10px;
   border-radius: 7px;
   font-size: 1.1em;
-  font-family: Poppins;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 400;
   text-transform: none;
   color: rgba(39, 39, 39, 0.768627451);
@@ -44,9 +44,9 @@ main #main-content {
 }
 
 main #main-content .card-body .card-title {
-  text-shadow: 0px 0px 100px rgba(39, 39, 39, 0.768627451);
+  text-shadow: 0px 0px 45px rgba(39, 39, 39, 0.768627451);
   font-size: none;
-  font-family: Roboto;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-weight: 600;
   text-transform: none;
   color: rgba(239, 241, 243, 0.9254901961);
@@ -54,7 +54,7 @@ main #main-content .card-body .card-title {
 
 main #main-content .card-body #card-description {
   font-size: 1.1em;
-  font-family: Poppins;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 400;
   text-transform: none;
   color: rgba(39, 39, 39, 0.768627451);
@@ -68,6 +68,7 @@ main #main-content .card-body #card-description {
   }
   #illustration {
     margin: auto;
+    padding-top: 1em;
   }
 }
 

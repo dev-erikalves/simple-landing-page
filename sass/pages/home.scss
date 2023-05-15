@@ -49,13 +49,13 @@ main #main-content {
 }
 
 main #main-content .card-body .card-title {
-    text-shadow: 0px 0px 100px $colorDark;
+    text-shadow: 0px 0px 45px $colorDark;
     @include font-style(none, $font-secundary, 600, none, $colorWhite)
 }
 
 main #main-content .card-body #card-description {
     @include font-style(1.1em, $font-primary, 400, none, $colorDark)
-} 
+}
 
 @media (max-width: 768px) {
      header nav {
@@ -66,6 +66,7 @@ main #main-content .card-body #card-description {
 
     #illustration {
         margin: auto;
+        padding-top: 1em;
     }
 }
 
