@@ -11,17 +11,17 @@
     <title>Simple Landing Page</title>
 </head>
 
-<body>
-    <header>
-        <nav class="navbar navbar-light bg-info">
+<body class="d-flex flex-column w-100">
+    <header class="bg-info">
+        <nav class="navbar navbar-light">
             <a class="navbar-brand" href="./index.html">
-                <img src="../sass/assets/graph-up-arrow.svg" width="35" height="30"
-                    class="d-inline-block align-top" alt="Company Logo">
-               Your Investment
+                <img src="../sass/assets/graph-up-arrow.svg" width="35" height="30" class="d-inline-block align-top"
+                    alt="Company Logo">
+                <span class="name-company">Your Investment</span>
             </a>
             <ul class="nav justify-content-end">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Features</a>
+                    <a class="nav-link" href="#">Features</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Pricing</a>
@@ -39,7 +39,22 @@
         </nav>
     </header>
 
-
+    <main>
+        <div class="card mb-3 p-4 w-100 bg-info d-flex" id="main-content">
+            <div class="row g-0">
+                <div class="col-md-6 m-auto">
+                    <div class="card-body">
+                        <h1 class="card-title">Do not know where to start? Come and let us help you on this journey!</h1>
+                        <p id="card-description" class="card-text">Lorem ipsum dolor sitllendus error explicabo laboriosam similique, atque itaque ab. Quo, asperiores, vitae placeat expedita nihil corrupti aspernatur magnam earum quos, iusto similique necessitatibus vel.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex float-end">
+                    <img id="illustration" src="../sass/assets/undraw_projections_re_ulc6.svg" class="img-fluid m-auto" width="500" alt="Ilustração mulher com gráficos">
+                </div>
+            </div>
+        </div>
+    </main>
 
     <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>

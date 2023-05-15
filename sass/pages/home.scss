@@ -1,11 +1,11 @@
 @import "../variables/variables.scss";
 
-
-@mixin font-style($font-size, $font-family, $font-weight, $text-tranform) {
+@mixin font-style($font-size, $font-family, $font-weight, $text-tranform, $color) {
     font-size: $font-size;
     font-family: $font-family;
     font-weight: $font-weight;
     text-transform: $text-tranform;
+    color: $color;
 }
 
 @mixin common-measures($margin, $padding, $border-radius) {
@@ -14,34 +14,57 @@
     border-radius: $border-radius;
 }
 
-header .navbar {
-    padding: 25px 2% 10px 2%;
+header {
+    @include common-measures(0, 1em, none);
+    width: 100%;
 }
 
-header nav .navbar-brand {
+header nav .name-company {
     margin-left: .7em;
-    @include font-style(1.3em, $font-secundary, 600, uppercase);
+    @include font-style(1.5rem, $font-secundary, 600, uppercase, $colorDark);
 }
 
 header nav ul li .nav-link {
-    color: #232323;
     transition: 500ms;
     @include common-measures(5px, 4px 10px, 7px);
-    @include font-style(1.1em, $font-primary, 400, none);
+    @include font-style(1.1em, $font-primary, 400, none, $colorDark);
 
-    &.signupBtn {
-        background-color: $btnNavColor;
-
-        &:hover {
-            background-color: transparent;
-        }
+    &:hover {
+        text-decoration: underline;
     }
 
-    &.loginBtn {
-        background-color: $btnNavColor;
+    &.signupBtn, &.loginBtn {
+        background-color: $colorWhite;
 
         &:hover {
             background-color: transparent;
         }
     }
 }
+
+main #main-content {
+    min-height: 100vh;
+    justify-content: center;
+    border-radius: 0;
+}
+
+main #main-content .card-body .card-title {
+    @include font-style(none, $font-secundary, 600, none, $colorWhite )
+}
+
+main #main-content .card-body #card-description {
+    @include font-style(1.1em, $font-primary, 400, none, $colorDark)
+} 
+
+@media (max-width: 768px) {
+     header nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #illustration {
+        margin: auto;
+    }
+}
+
