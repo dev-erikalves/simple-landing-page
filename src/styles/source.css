@@ -43,6 +43,7 @@ main #main-content {
   min-height: 100vh;
   justify-content: center;
   border-radius: 0;
+  border: 0;
 }
 
 main #main-content .card-body .card-title {
@@ -62,7 +63,7 @@ main #main-content .card-body #card-description {
   color: rgba(39, 39, 39, 0.768627451);
 }
 
-footer .container-links-footer {
+.footer-links .container-links-footer {
   font-size: 1em;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;

@@ -49,6 +49,7 @@ main #main-content {
     min-height: 100vh;
     justify-content: center;
     border-radius: 0;
+    border: 0;
 }
 
 main #main-content .card-body .card-title {
@@ -60,7 +61,7 @@ main #main-content .card-body #card-description {
     @include font-style(1.1em, $font-primary, 400, none, $colorDark)
 }
 
-footer .container-links-footer {
+.footer-links .container-links-footer {
     @include font-style(1em, $font-primary, 500, none, $colorDark);
 }
 
