@@ -16,12 +16,15 @@
 
 header {
     @include common-measures(0, 1em, none);
-    width: 100%;
 }
 
-header nav .name-company {
+.name-company {
     margin-left: .7em;
     @include font-style(1.5rem, $font-secundary, 600, uppercase, $colorDark);
+
+    &.name-company-footer {
+        font-size: 1.1em;
+    }
 }
 
 header nav ul li .nav-link {
@@ -57,16 +60,23 @@ main #main-content .card-body #card-description {
     @include font-style(1.1em, $font-primary, 400, none, $colorDark)
 }
 
+footer .container-links-footer {
+    @include font-style(1em, $font-primary, 500, none, $colorDark);
+}
+
+.links-footer {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+        color: $colorDark;
+    }
+}
+
 @media (max-width: 768px) {
      header nav {
         display: flex;
         flex-direction: column;
         text-align: center;
-    }
-
-    #illustration {
-        margin: auto;
-        padding-top: 1em;
     }
 }
 

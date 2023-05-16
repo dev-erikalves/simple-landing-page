@@ -12,8 +12,8 @@
     <title>Your Investment</title>
 </head>
 
-<body class="d-flex flex-column w-100">
-    <header class="bg-info">
+<body class="d-flex flex-column w-100 h-100">
+    <header class="bg-info w-100">
         <nav class="navbar navbar-light">
             <a class="navbar-brand" href="./index.html">
                 <img src="../sass/assets/graph-up-arrow.svg" width="35" height="30" class="d-inline-block align-top"
@@ -41,24 +41,25 @@
     </header>
 
     <main>
-        <div class="card mb-3 p-4 w-100 bg-info d-flex" id="main-content">
+        <div class="card p-4 w-100 bg-info d-flex" id="main-content">
             <div class="row g-0">
                 <div class="col-md-6 m-auto">
                     <div class="card-body">
                         <h1 class="card-title">Do not know where to start? Come and let us help you on this journey!
                         </h1>
-                        <p id="card-description" class="card-text pt-2">Lorem ipsum dolor sitllendus error explicabo laboriosam similique, atque itaque ab. Quo, asperiores, vitae placeat expedita nihil
+                        <p id="card-description" class="card-text pt-2">Lorem ipsum dolor sitllendus error explicabo
+                            laboriosam similique, atque itaque ab. Quo, asperiores, vitae placeat expedita nihil
                             corrupti aspernatur magnam earum quos, iusto similique necessitatibus vel.
                         </p>
-                        <div class="d-flex flex-row gap-3">
+                        <div class="d-flex flex-row gap-3 mb-4">
                             <button class="btn btn-primary btn-lg d-flex align-items-center gap-2">
                                 <img src="../sass/assets/apple.svg" width="22" alt="Simbol Apple">
                                 Apple Store
-                              </button>
-                              <button class="btn btn-primary btn-lg d-flex align-items-center gap-2">
+                            </button>
+                            <button class="btn btn-primary btn-lg d-flex align-items-center gap-2">
                                 <img src="../sass/assets/google-play.svg" width="20" alt="Simbol Play Store">
                                 Play Store
-                              </button>                              
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -69,6 +70,38 @@
             </div>
         </div>
     </main>
+
+    <footer class="bg-info p-4 d-flex flex-wrap w-100"> 
+                <div class="container-links-footer d-flex flex-column m-auto p-3">
+                    <h5>About</h5>
+                    <a class="links-footer" href="#">About Us</a>
+                    <a class="links-footer" href="#">More About</a>
+                    <a class="links-footer" href="#">Yes, about!</a>
+                    <a class="links-footer" href="#">About Links</a>
+                </div>
+                <div class="container-links-footer d-flex flex-column m-auto p-3">
+                    <h5>Resources</h5>
+                    <a class="links-footer" href="#">Resource name</a>
+                    <a class="links-footer" href="#">One More Resource</a>
+                    <a class="links-footer" href="#">Resourcers here</a>
+                    <a class="links-footer" href="#">What Resource</a>
+                </div>
+                <div class="container-links-footer d-flex flex-column m-auto p-3">
+                    <h5>Support</h5>
+                    <a class="links-footer" href="#">Support</a>
+                    <a class="links-footer" href="#">More Support</a>
+                    <a class="links-footer" href="#">Support, yes</a>
+                    <a class="links-footer" href="#">Hello, support</a>
+                </div>
+    </footer>
+    <footer class="footer-copyright bg-info d-flex">
+        <div class="m-auto p-5">
+            <img src="../sass/assets/graph-up-arrow.svg" width="30" alt="">
+            <span class="name-company name-company-footer">Your Investment</span>
+            <p>&#169; 2023</p>
+        </div>
+    </footer>
+
 
     <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
