@@ -13,16 +13,18 @@ header {
   margin: 0;
   padding: 1em;
   border-radius: none;
-  width: 100%;
 }
 
-header nav .name-company {
+.name-company {
   margin-left: 0.7em;
   font-size: 1.5rem;
   font-family: Roboto, Arial, Helvetica, sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   color: rgba(39, 39, 39, 0.768627451);
+}
+.name-company.name-company-footer {
+  font-size: 1.1em;
 }
 
 header nav ul li .nav-link {
@@ -50,6 +52,7 @@ main #main-content {
   min-height: 100vh;
   justify-content: center;
   border-radius: 0;
+  border: 0;
 }
 
 main #main-content .card-body .card-title {
@@ -69,15 +72,27 @@ main #main-content .card-body #card-description {
   color: rgba(39, 39, 39, 0.768627451);
 }
 
+.footer-links .container-links-footer {
+  font-size: 1em;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  text-transform: none;
+  color: rgba(39, 39, 39, 0.768627451);
+}
+
+.links-footer {
+  text-decoration: none;
+}
+.links-footer:hover {
+  text-decoration: underline;
+  color: rgba(39, 39, 39, 0.768627451);
+}
+
 @media (max-width: 768px) {
   header nav {
     display: flex;
     flex-direction: column;
     text-align: center;
-  }
-  #illustration {
-    margin: auto;
-    padding-top: 1em;
   }
 }
 
