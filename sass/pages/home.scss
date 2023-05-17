@@ -13,6 +13,11 @@
     padding: $padding;
     border-radius: $border-radius;
 }
+/* Screens < 478px */
+#offcanvas-headerBtn {
+    display: none
+}
+/*  */
 
 header {
     @include common-measures(0, 1em, none);

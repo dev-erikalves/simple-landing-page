@@ -1,6 +1,31 @@
+@media screen and (max-width: $screen-sm) {
+    .nav /* ul in header */ {
+        display: none;
+    }
+
+    #offcanvas-headerBtn {
+        display: block;
+    }
+
+    .offcanvas-body > .links-offcanvas {
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: 500;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: $colorWhite;
+        color: $colorDark;
+
+        &:hover {
+            text-decoration: underline;
+            background-color: transparent;
+            color: #7690a8;
+        }
+    }
+}
+
 @media screen and (max-width: $screen-md/* variables.scss */) {
     header nav {
        flex-direction: column;
-       
    }
 }

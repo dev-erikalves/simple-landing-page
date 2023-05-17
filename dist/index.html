@@ -18,13 +18,33 @@
     <title>Your Investment</title>
 </head>
 
-<body class="d-flex flex-column w-100 h-100">
+<body class="d-flex flex-column w-100">
     <header class="bg-info w-100 border-bottom">
         <nav class="navbar navbar-light">
             <a class="navbar-brand" href="./index.html">
                 <i class="bi bi-graph-up-arrow" style="font-size: 1.5em;"></i>
                 <span class="name-company">Your Investment</span>
             </a>
+            <!-- For screens < 478px the content below will be displayed by media-query (Menu Hamburguer Btn (off canvas bootstrap)) -->
+            <div id="offcanvas-headerBtn" class="">
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Menu <i class="bi bi-list"></i></button>
+                <div class="offcanvas offcanvas-end bg-info" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Your Investment</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex flex-column gap-2">
+                        <a class="links-offcanvas" href="#">Features</a>
+                        <a class="links-offcanvas" href="#">Pricing</a>
+                        <a class="links-offcanvas" href="#">FAQs</a>
+                        <a class="links-offcanvas" href="#">Sign Up</a>
+                        <a class="links-offcanvas" href="#">Login</a>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
             <ul class="nav justify-content-end">
                 <li class="nav-item">
                     <a class="nav-link" href="#">Features</a>
@@ -76,28 +96,28 @@
         </div>
     </main>
 
-    <footer class="footer-links bg-info p-4 d-flex flex-wrap w-100"> 
-                <div class="container-links-footer d-flex flex-column m-auto p-3">
-                    <h5>About</h5>
-                    <a class="links-footer" href="#">About Us</a>
-                    <a class="links-footer" href="#">More About</a>
-                    <a class="links-footer" href="#">Yes, about!</a>
-                    <a class="links-footer" href="#">About Links</a>
-                </div>
-                <div class="container-links-footer d-flex flex-column m-auto p-3">
-                    <h5>Resources</h5>
-                    <a class="links-footer" href="#">Resource name</a>
-                    <a class="links-footer" href="#">One More Resource</a>
-                    <a class="links-footer" href="#">Resourcers here</a>
-                    <a class="links-footer" href="#">What Resource</a>
-                </div>
-                <div class="container-links-footer d-flex flex-column m-auto p-3">
-                    <h5>Support</h5>
-                    <a class="links-footer" href="#">Support</a>
-                    <a class="links-footer" href="#">More Support</a>
-                    <a class="links-footer" href="#">Support, yes</a>
-                    <a class="links-footer" href="#">Hello, support</a>
-                </div>
+    <footer class="footer-links bg-info p-4 d-flex flex-wrap w-100">
+        <div class="container-links-footer d-flex flex-column m-auto p-3">
+            <h5>About</h5>
+            <a class="links-footer" href="#">About Us</a>
+            <a class="links-footer" href="#">More About</a>
+            <a class="links-footer" href="#">Yes, about!</a>
+            <a class="links-footer" href="#">About Links</a>
+        </div>
+        <div class="container-links-footer d-flex flex-column m-auto p-3">
+            <h5>Resources</h5>
+            <a class="links-footer" href="#">Resource name</a>
+            <a class="links-footer" href="#">One More Resource</a>
+            <a class="links-footer" href="#">Resourcers here</a>
+            <a class="links-footer" href="#">What Resource</a>
+        </div>
+        <div class="container-links-footer d-flex flex-column m-auto p-3">
+            <h5>Support</h5>
+            <a class="links-footer" href="#">Support</a>
+            <a class="links-footer" href="#">More Support</a>
+            <a class="links-footer" href="#">Support, yes</a>
+            <a class="links-footer" href="#">Hello, support</a>
+        </div>
     </footer>
 
     <footer class="footer-copyright bg-info d-flex border-top">

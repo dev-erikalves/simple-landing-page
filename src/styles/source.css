@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 /* Media Queries */
+/* Screens < 478px */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+#offcanvas-headerBtn {
+  display: none;
+}
+
+/*  */
 header {
   margin: 0;
   padding: 1em;
@@ -81,6 +87,28 @@ main #main-content .card-body #card-description {
 }
 
 /* Media Queries */
+@media screen and (max-width: 478px) {
+  .nav {
+    display: none;
+  }
+  #offcanvas-headerBtn {
+    display: block;
+  }
+  .offcanvas-body > .links-offcanvas {
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(239, 241, 243, 0.9254901961);
+    color: rgba(39, 39, 39, 0.768627451);
+  }
+  .offcanvas-body > .links-offcanvas:hover {
+    text-decoration: underline;
+    background-color: transparent;
+    color: #7690a8;
+  }
+}
 @media screen and (max-width: 768px) {
   header nav {
     flex-direction: column;
