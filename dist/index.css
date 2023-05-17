@@ -9,6 +9,13 @@
 /*!*****************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/source.css (2) ***!
   \*****************************************************************************/
+/* Media Queries */
+/* Screens < 478px */
+#btnMenu-offcanvas {
+  display: none;
+}
+
+/*  */
 header {
   margin: 0;
   padding: 1em;
@@ -88,11 +95,32 @@ main #main-content .card-body #card-description {
   color: rgba(39, 39, 39, 0.768627451);
 }
 
-@media (max-width: 768px) {
+/* Media Queries */
+@media screen and (max-width: 478px) {
+  .nav {
+    display: none;
+  }
+  #btnMenu-offcanvas {
+    display: block;
+  }
+  .offcanvas-body > .links-offcanvas {
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(239, 241, 243, 0.9254901961);
+    color: rgba(39, 39, 39, 0.768627451);
+  }
+  .offcanvas-body > .links-offcanvas:hover {
+    text-decoration: underline;
+    background-color: transparent;
+    color: #7690a8;
+  }
+}
+@media screen and (max-width: 768px) {
   header nav {
-    display: flex;
     flex-direction: column;
-    text-align: center;
   }
 }
 

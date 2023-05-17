@@ -1,9 +1,10 @@
+//home page
 @media screen and (max-width: $screen-sm) {
     .nav /* ul in header */ {
         display: none;
     }
 
-    #offcanvas-headerBtn {
+    #btnMenu-offcanvas {
         display: block;
     }
 

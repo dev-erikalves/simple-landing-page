@@ -19,14 +19,15 @@
 </head>
 
 <body class="d-flex flex-column w-100">
-    <header class="bg-info w-100 border-bottom">
+
+    <header class="bg-info w-100 border-bottom sticky-top">
         <nav class="navbar navbar-light">
             <a class="navbar-brand" href="./index.html">
                 <i class="bi bi-graph-up-arrow" style="font-size: 1.5em;"></i>
                 <span class="name-company">Your Investment</span>
             </a>
             <!-- For screens < 478px the content below will be displayed by media-query (Menu Hamburguer Btn (off canvas bootstrap)) -->
-            <div id="offcanvas-headerBtn" class="">
+            <div id="btnMenu-offcanvas">
                 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Menu <i class="bi bi-list"></i></button>
                 <div class="offcanvas offcanvas-end bg-info" tabindex="-1" id="offcanvasRight"
@@ -35,6 +36,7 @@
                         <h5 class="offcanvas-title" id="offcanvasRightLabel">Your Investment</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
+
                     <div class="offcanvas-body d-flex flex-column gap-2">
                         <a class="links-offcanvas" href="#">Features</a>
                         <a class="links-offcanvas" href="#">Pricing</a>
@@ -66,7 +68,7 @@
     </header>
 
     <main>
-        <div class="card p-4 w-100 bg-info d-flex border-bottom" id="main-content">
+        <div class="card p-3 w-100 bg-info d-flex border-bottom" id="main-content">
             <div class="row g-0">
                 <div class="col-md-6 m-auto">
                     <div class="card-body">
