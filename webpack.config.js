@@ -36,10 +36,8 @@ module.exports = {
     new MiniCssExtractPlugin(),
     new CopyWebpackPlugin({
       patterns: [
-        { from: 'node_modules/bootstrap/dist/css/bootstrap.min.css', to: 'css' },
-        { from: 'node_modules/bootstrap/dist/js/bootstrap.min.js', to: 'js' },
-        { from: 'node_modules/bootstrap-icons/font/bootstrap-icons.min.css', to: 'css' },
-        { from: 'node_modules/bootstrap-icons/font/fonts', to: 'fonts' },
+        { from: 'node_modules/bootstrap/dist/css/bootstrap.min.css', to: 'bootstrap/css' },
+        { from: 'node_modules/bootstrap/dist/js/bootstrap.min.js', to: 'bootstrap/js' },
         { from: 'sass/assets/money-management-favicon.png', to: 'assets' },
         { from: 'sass/assets/undraw_projections_re_ulc6.svg', to: 'assets' },
       ],
